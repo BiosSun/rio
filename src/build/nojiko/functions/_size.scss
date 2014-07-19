@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// -----------------------------------------------------------------------------
+// 设置元素的宽度和高度。
+//
+// examples:
+// @include size(100);         // width: 100px; height: 100px;
+// @include size(100, 200);    // width: 100px; height: 200px;
+// -----------------------------------------------------------------------------
+@mixin size($size) {
+    @if length($size) == 1 {
+        @include set-length-value(width, $size);
+        @include set-length-value(height, $size);
+    }
+    @else if length($size) == 2 {
+        @include set-length-value(width, nth($size, 1));
+        @include set-length-value(height, nth($size, 2));
+    }
+}

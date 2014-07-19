@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@mixin transition($properties...) {
+    @include prefixer(webkit moz, transition, $properties);
+}
+
+@mixin transition-property($properties...) {
+    @include prefixer(webkit moz, transition-property, properties);
+}
+
+@mixin transition-duration ($times...) {
+    @include prefixer(webkit moz, transition-duration, $times);
+}
+
+@mixin transition-timing-function ($motions...) {
+    // ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier()
+    @include prefixer(webkit moz, transition-timing-function, $motions);
+}
+
+@mixin transition-delay ($times...) {
+    @include prefixer(webkit moz, transition-delay, $times);
+}

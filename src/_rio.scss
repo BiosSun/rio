@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+@import "settings";
+
+%rio-small {
+    font-size: 90%;
+    color: $rio-text-light;
+}
+
+%rio-block {
+    margin: 1.27em 0;
+}
+
+// 样式设置
+// ---------------------------
+
+.#{$rio-class} {
+
+
+    // 全局样式
+    // ---------------------------
+
+    @if $rio-text-size != false {
+        font-size: $rio-text-size;
+    }
+
+    @if $rio-line-height != false {
+        line-height: $rio-line-height;
+    }
+
+    @if $rio-text-family != false {
+        font-family: $rio-text-family;
+    }
+
+    @if $rio-text-align != false {
+        text-align: $rio-text-align;
+    }
+
+    // 防止子元素外边距溢出，影响样式效果。
+    > *:first-child { margin-top: 0;    }
+    > *:last-child  { margin-bottom: 0; }
+
+    // 不需要加宽的元素
+    address, caption, cite, code, em, th, dfn, var {
+        font-weight: 400;
+    }
+
+    // 块级元素外边距统一设置
+    h1, h2, h3, h4, h5, h6,
+    p, pre, ul, ol, dl, table, form, hr,
+    .#{$rio-class}-block {
+        @extend %rio-block;
+    }
+
+    // 代码字体
+    @if $rio-code-family != false {
+        code, pre, var {
+            font-family: $rio-code-family;
+        }
+    }
+
+    // 行内元素样式
+    // ---------------------------
+
+    // 链接
+    a {
+        text-decoration: none;
+
+        &:hover, &:focus {
+            border-bottom: 1px solid;
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: 1px dotted $rio-text-light;
+        }
+    }
+
+    // 加粗，着重
+    b, strong {
+        font-weight: 700;
+    }
+
+    // 斜体，次级着重
+    i, em {
+        font-style: italic;
+        margin-right: 0.2em;
+    }
+
+    // 上、下标
+    sup, sub {
+        font-size: .75em;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+        vertical-align: text-top\9;
+
+        margin-right: 0.2em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    // 标记，高亮
+    mark {
+        @if $rio-mark-bg != false {
+            background: $rio-mark-bg;
+        }
+
+        @if $rio-mark-padding != false {
+            padding: $rio-mark-padding;
+        }
+    }
+
+    // 缩写
+    abbr {
+        cursor: help;
+        border-bottom: 1px dotted;
+    }
+
+    // 引用
+    q {
+        color: $rio-text-light;
+    }
+
+    // 小号文字，主用于旁注功能
+    small {
+        @extend %rio-small;
+    }
+
+    // 代码
+    code {
+        font-size: $rio-code-size;
+
+        @if $rio-code-color != false {
+            color: $rio-code-color;
+        }
+
+        @if $rio-code-bg != false {
+            background: $rio-code-bg;
+        }
+
+        padding: 2px 0.5em;
+        white-space: nowrap;
+        @include border-radius(0.3em);
+    }
+
+    // 图片
+    img {
+        max-width: 100%;
+    }
+
+
+    // 块级元素
+    // ---------------------------
+
+    // 标题
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: $rio-title-weight;
+
+        @if $rio-title-line-height != false {
+            line-height: $rio-title-line-height;
+        }
+
+        @if $rio-title-margin-top != false {
+            margin-top: $rio-title-margin-top;
+        }
+
+        @if $rio-title-margin-bottom != false {
+            margin-bottom: $rio-title-margin-bottom;
+        }
+
+        a {
+            color: $rio-text;
+            border-bottom: 1px dotted;
+
+            &:hover, &:focus {
+                text-decoration: none;
+                color: $link-color;
+            }
+        }
+
+        small {
+            font-size: 70%;
+        }
+    }
+
+    h1 { font-size: $rio-h1-size; }
+    h2 { font-size: $rio-h2-size; }
+    h3 { font-size: $rio-h3-size; }
+    h4 { font-size: $rio-h4-size; }
+    h5 { font-size: $rio-h5-size; }
+    h6 { font-size: $rio-h6-size; }
+
+    // 列表
+    ul, ol, dd {
+        margin-left: $rio-list-margin-left;
+        padding-left: 0;
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    li, dd {
+        padding: 0.17em 0;
+    }
+
+    li {
+        ul, ol {
+            padding: 0.17em 0 0;
+            @include margin(0 false);
+        }
+
+        ul {
+            list-style: circle;
+        }
+    }
+
+    // 表格
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        text-align: left;
+
+        border-top: 1px solid $rio-block-el-border-color;
+        background: $rio-block-el-bg-color;
+    }
+
+    thead tr, tr:hover {
+        background: $rio-block-el-border-color;
+    }
+
+    tfoot {
+        @extend %rio-small;
+    }
+
+    th, td {
+        padding: 0.7em 1.4em;
+        border-bottom: 1px solid $rio-block-el-border-color;
+    }
+
+    th {
+        font-weight: 700;
+    }
+
+    // 代码块
+    pre {
+        code {
+            display: block;
+            padding: 1em 1.2em;
+            background: $rio-block-el-bg-color;
+            color: $rio-text;
+            white-space: pre;
+            overflow: auto;
+        }
+    }
+
+    // 引用
+    blockquote {
+        border-left: .4em solid $rio-block-el-border-color;
+        background: $rio-block-el-bg-color;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1em 1.2em;
+        color: $rio-text-light;
+    }
+
+    // 分割线
+    hr {
+        height: 0;
+        border: 0 none;
+        border-bottom: 1px solid $rio-block-el-border-color;
+    }
+}

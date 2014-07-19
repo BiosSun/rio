@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// -----------------------------------------------------------------------------
+// 设置半透明背景
+// @examples:
+//   @include translucent-background(rgba(0, 0, 0, .2));
+//   @include translucent-background(#fff, 0.2);
+//   @include translucent-background(#fff 0.2); // 老式传参方式
+// note: 因为 IE 9 同时 alpha 以及 过滤器，因此在应用 IE Hack 时会导致两个设置相互重叠，
+// 使得最终显示的颜色要比所设置的颜色深很多，不过万幸的是这并非太严重的问题。
+// -----------------------------------------------------------------------------
+@mixin translucent-background($color, $alpha: false) {
+    $c: nth($color, 1);
+
+    @if $alpha {
+        $c: rgba($c, $alpha);
+    }
+    @else if length($color) >= 2 {
+        $c: rgba($c, nth($color, 2));
+    }
+
+    background: $c;
+
+    @if $support-ie6 or $support-ie7 or $support-ie8 {
+        zoom: 1\9;
+        filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#{ie-hex-str($c)}', EndColorStr='#{ie-hex-str($c)}');
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "rio",
+    "title": "Rio",
+    "description": "一个简洁的文字排版样式库。",
+    "version": "0.2.1",
+    "homepage": "http://biossun.org/projects/rio",
+    "author": {
+        "name": "Bios Sun",
+        "email": "biossun@gmail.com",
+        "url": "http://biossun.org"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:BiosSun/rio.git"
+    },
+    "bugs": "https://github.com/BiosSun/rio/issues",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/BiosSun/rio/blob/master/LICENSE-MIT"
+        }
+    ],
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-sass" : "~0.7.3",
+        "grunt-contrib-cssmin": "~0.4.1",
+        "grunt-contrib-watch" : "~0.4.0",
+        "grunt-contrib-jshint": "~0.6.3",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt-contrib-uglify": "~0.2.2"
+  }
+}

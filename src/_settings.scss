@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+// Rio 类名
+$rio-class: rio !default;
+
+// 字体大小 -f
+$rio-text-size: false !default;
+
+// 文字行高 -f
+$rio-line-height: 1.7 !default;
+
+// 文字对齐方式 -f
+$rio-text-align: left !default;
+
+// 字体，设置为 false 则取消字体设置
+$rio-text-family: false !default;
+
+// 颜色
+// ---------------------------
+
+// 文字颜色
+$rio-text: $text-color !default;
+
+// 文字置灰颜色
+$rio-text-light: $text-unstressed-color !default;
+
+// 块级元素边框颜色（若需要）
+$rio-block-el-border-color: #f0f0f0 !default;
+
+// 块级元素背景颜色（若需要）
+$rio-block-el-bg-color: #fafafa !default;
+
+// 标题
+// ---------------------------
+
+// 文字加粗
+$rio-title-weight: 500 !default;
+
+// 行高 -f
+$rio-title-line-height: 1.5em !default;
+
+// 上外边距 -f
+$rio-title-margin-top: 1.2em !default;
+
+// 下外边距 -f
+$rio-title-margin-bottom: 0.8em !default;
+
+$rio-h1-size: 2.2em !default;       // 一级标题文字大小
+$rio-h2-size: 1.8em !default;       // 二级...
+$rio-h3-size: 1.4em !default;       // 三级...
+$rio-h4-size: 1.2em !default;       // 四级...
+$rio-h5-size: 1.0em !default;       // 五级...
+$rio-h6-size: 0.9em !default;       // 六级...
+
+// 列表
+// ---------------------------
+
+// 左外边距
+$rio-list-margin-left: 2em;
+
+// mark
+// ---------------------------
+
+// 背景色 -f
+$rio-mark-bg: #fffda0;
+
+// 内边距 -f
+$rio-mark-padding: 1px 0;
+
+// code
+// ---------------------------
+
+// 代码文字大小
+$rio-code-size: 0.9em;
+
+// 代码字体
+$rio-code-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+
+// 行内代码的字体颜色 -f
+$rio-code-color: false;
+
+// 行内代码的背景颜色 -f
+$rio-code-bg: #f7f7f7;

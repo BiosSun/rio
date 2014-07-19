@@ -1,0 +1,72 @@
+body {
+    font: 13px/1.48 "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
+    color: #333;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+a {
+    color: #428BCA;
+}
+
+#page {
+    position: relative;
+    width: 700px;
+    margin: 10px 0 10px 100px;
+    padding: 50px 49px;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+}
+
+#page.displayed {
+    width: 660px;
+    font-size: 14px;
+}
+
+#catalogue {
+    position: fixed;
+    left: 900px;
+    top: 0;
+    overflow: hidden;
+    _overflow: auto;
+    height: 100%;
+    padding: 0 20px 0 10px;
+    width: 277px;
+}
+
+#catalogue:hover {
+    overflow: auto;
+}
+
+.rio .tagline {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.rio .show-box {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.rio .show-title-box h1,
+.rio .show-title-box h2,
+.rio .show-title-box h3,
+.rio .show-title-box h4,
+.rio .show-title-box h5,
+.rio .show-title-box h6 {
+    margin: 0;
+}
+
+.rio .show-title-box hr {
+    margin: 15px 0;
+}
+
+.rio .show-block-box :first-child {
+    margin-top: 0;
+}
+
+.rio .show-block-box :last-child {
+    margin-bottom: 0;
+}

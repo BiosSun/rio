@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// Official animation shorthand property.
+@mixin animation ($animations...) {
+  @include prefixer(webkit moz, animation, $animations);
+}
+
+// Individual Animation Properties
+@mixin animation-name ($names...) {
+  @include prefixer(webkit moz, animation-name, $names);
+}
+
+@mixin animation-duration ($times...) {
+  @include prefixer(webkit moz, animation-duration, $times);
+}
+
+@mixin animation-timing-function ($motions...) {
+// ease | linear | ease-in | ease-out | ease-in-out
+  @include prefixer(webkit moz, animation-timing-function, $motions);
+}
+
+@mixin animation-iteration-count ($values...) {
+// infinite | <number>
+  @include prefixer(webkit moz, animation-iteration-count, $values);
+}
+
+@mixin animation-direction ($directions...) {
+// normal | alternate
+  @include prefixer(webkit moz, animation-direction, $directions);
+}
+
+@mixin animation-play-state ($states...) {
+// running | paused
+  @include prefixer(webkit moz, animation-play-state, $states);
+}
+
+@mixin animation-delay ($times...) {
+  @include prefixer(webkit moz, animation-delay, $times);
+}
+
+@mixin animation-fill-mode ($modes...) {
+// none | forwards | backwards | both
+  @include prefixer(webkit moz, animation-fill-mode, $modes);
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@mixin border-radius($r) {
+    @include prefixer(moz webkit, border-radius, $r);
+}
+
+@mixin border-top-left-radius($r) {
+    @include prefixer(moz webkit, border-top-left-radius, $r);
+}
+
+@mixin border-top-right-radius($r) {
+    @include prefixer(moz webkit, border-top-right-radius, $r);
+}
+
+@mixin border-bottom-left-radius($r) {
+    @include prefixer(moz webkit, border-bottom-left-radius, $r);
+}
+
+@mixin border-bottom-right-radius($r) {
+    @include prefixer(moz webkit, border-bottom-right-radius, $r);
+}
+
+@mixin border-top-radius($r) {
+    @include prefixer(moz webkit, border-top-left-radius, $r);
+    @include prefixer(moz webkit, border-top-right-radius, $r);
+}
+
+@mixin border-bottom-radius($r) {
+    @include prefixer(moz webkit, border-bottom-left-radius, $r);
+    @include prefixer(moz webkit, border-bottom-right-radius, $r);
+}
+
+@mixin border-left-radius($r) {
+    @include prefixer(moz webkit, border-top-left-radius, $r);
+    @include prefixer(moz webkit, border-bottom-left-radius, $r);
+}
+
+@mixin border-right-radius($r) {
+    @include prefixer(moz webkit, border-top-right-radius, $r);
+    @include prefixer(moz webkit, border-bottom-right-radius, $r);
+}

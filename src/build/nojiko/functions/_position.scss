@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+// ===========================================================================================================
+// 用于快速书写 postion 相关样式规则，可以同时定义 position，left，right，top，bottom 以及 z-index 五个规则。
+//
+// @example:
+//    position(absolute, 20px 0 0, 1000);
+// ===========================================================================================================
+@mixin position($position: relative, $coordinates: false false false false, $z-index: false) {
+    @if type-of($position) == list {
+        $coordinates: $position;
+        $position: relative;
+    }
+
+    position: $position;
+
+    @if $position != static {
+        $coordinates: expand($coordinates);
+
+        $top: nth($coordinates, 1);
+        $right: nth($coordinates, 2);
+        $bottom: nth($coordinates, 3);
+        $left: nth($coordinates, 4);
+
+        @include set-length-value(top, $top);
+        @include set-length-value(right, $right);
+        @include set-length-value(bottom, $bottom);
+        @include set-length-value(left, $left);
+    }
+
+    @if $position == absolute and $support-ie6 {
+        _zoom: 1; // IE6 中的绝对定位是相对内容区域定位，而非包含内边距在内的区域
+    }
+
+    @if $z-index {
+        z-index: $z-index;
+    }
+}

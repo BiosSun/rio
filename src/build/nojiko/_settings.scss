@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+// 浏览器支持
+// ---------------------------
+
+// 是否支持低版本的 IE 浏览器
+$support-ie: true !default;
+
+// 是否支持 IE 6 浏览器
+$support-ie6: $support-ie !default;
+
+// 是否支持 IE 7 浏览器
+$support-ie7: $support-ie !default;
+
+// 是否支持 IE 8 浏览器
+$support-ie8: $support-ie !default;
+
+// 是否应用 mozilla 中尚处于实验性质的 CSS 属性 （-moz-）
+$support-mozilla: true !default;
+
+// 是否应用 webkit 中尚处于实验性质的 CSS 属性 （-webkit-）
+$support-webkit: true !default;
+
+// 是否应用 opera 中尚处于实验性质的 CSS 属性 （-o-）
+$support-opera: true !default;
+
+// 是否应用 microsoft 中尚处于实验性质的 CSS 属性 （-ms-）
+$support-microsoft: true !default;
+
+
+// 资源
+// ---------------------------
+
+// 图片文件根目录
+$rimg: '/resource/img'    !default;
+// 字体文件根目录
+$rfont: '/resource/font'  !default;
+// 样式文件根目录
+$rcss: '/resource/css'    !default;
+
+
+// 文字
+// ---------------------------
+
+// 英文无衬线字体集
+$font-family-definition-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 英文衬线字体集
+$font-family-definition-serif: Georgia, "Times New Roman", Times, serif;
+// 英文等宽字体集
+$font-family-definition-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+// 较适合中文环境的无衬线字体集
+$font-family-definition-chinese: "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif !default;
+
+// 默认文字大小
+$font-size: 14px !default;
+// 较大文字大小
+$font-size-large: ceil($font-size * 1.25) !default; // 18px
+// 较小文字大小
+$font-size-small: ceil($font-size * 0.85) !default; // 12px
+
+// 默认文字行高
+$font-line-height: 1.428571429  !default;
+// 计算为 px 单位的行高
+$font-line-height-px: if(unit($font-line-height) == 'px', $font-line-height, floor($font-size * $font-line-height));
+
+// 默认字体集
+$font-family: sans-serif !default;
+// 默认代码字体集
+$font-family-monspace: monspace !default;
+
+
+// 颜色
+// ---------------------------
+
+// 深灰色
+$gray-darker:            lighten(#000, 13.5%) !default;   // #222
+// 暗灰色
+$gray-dark:              lighten(#000, 20%)   !default;   // #333
+// 灰色
+$gray:                   lighten(#000, 33.5%) !default;   // #555
+// 淡灰色
+$gray-light:             lighten(#000, 60%)   !default;   // #999
+// 浅灰色
+$gray-lighter:           lighten(#000, 93.5%) !default;   // #eee
+
+// 背景色
+$body-bg:                  #fff                       !default;
+
+// 文本颜色
+$text-color:               $gray-dark                 !default;
+
+// 需要强调的文本颜色
+$text-marcato-color:       $gray-darker               !default;
+
+// 不需要强调的文本颜色
+$text-unstressed-color:    $gray-light                !default;
+
+// 链接颜色
+$link-color:               #428bca                    !default;
+
+// 链接悬停颜色
+$link-hover-color:         darken($link-color, 15%)   !default;
+
+// 主色
+$brand-primary:            #428bca !default;
+// 附属色
+$brand-adjunctive:         false   !default;
+// 背景色
+$brand-background:         false   !default;
+// 融合色
+$brand-syncretic:          false   !default;
+// 强调色
+$brand-intersperse:        false   !default;
+
+// 成功
+$brand-success:            #5cb85c !default;
+// 消息
+$brand-info:               #5bc0de !default;
+// 警告
+$brand-warning:            #f0ad4e !default;
+// 错误
+$brand-danger:             #d9534f !default;
+
+// 成功状态配色
+$state-success-text:       #468847 !default;
+$state-success-bg:         #dff0d8 !default;
+$state-success-border:     darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+// 消息状态配色
+$state-info-text:          #3a87ad !default;
+$state-info-bg:            #d9edf7 !default;
+$state-info-border:        darken(adjust-hue($state-info-bg, -10), 5%) !default;
+
+// 警告状态配色
+$state-warning-text:       #c09853 !default;
+$state-warning-bg:         #fcf8e3 !default;
+$state-warning-border:     darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+// 错误状态配色
+$state-danger-text:        #b94a48 !default;
+$state-danger-bg:          #f2dede !default;
+$state-danger-border:      darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+// 盒模型
+// ---------------------------
+
+// 全局盒尺寸计算模式
+$global-box-sizing: content-box            !default;
+
+// 默认尺寸
+$m-padding-vertical: 6px                   !default;
+$m-padding-horizontal: 12px                !default;
+$m-border-width: 1px                       !default;
+$m-border-radius: 3px                      !default;
+$m-line-height: $font-line-height          !default;
+$m-font-size: $font-size                   !default;
+
+// 较大尺寸
+$l-padding-vertical: 10px                  !default;
+$l-padding-horizontal: 16px                !default;
+$l-border-width: $m-border-width           !default;
+$l-border-radius: $m-border-radius         !default;
+$l-font-size: $font-size-large             !default;
+$l-line-height: 1.34                       !default;
+
+// 超大尺寸
+$xl-padding-vertical: 13px                 !default;
+$xl-padding-horizontal: 22px               !default;
+$xl-border-width: $l-border-width          !default;
+$xl-border-radius: $l-border-radius        !default;
+$xl-font-size: ceil($l-font-size * 1.2)    !default;
+$xl-line-height: $l-line-height            !default;
+
+// 较小尺寸
+$s-padding-vertical: 4px                   !default;
+$s-padding-horizontal: 9px                !default;
+$s-border-width: $m-border-width           !default;
+$s-border-radius: $m-border-radius         !default;
+$s-font-size: $font-size-small             !default;
+$s-line-height: 1.5                        !default;
+
+// 超小尺寸
+$xs-padding-vertical: 2px                  !default;
+$xs-padding-horizontal: 6px                !default;
+$xs-border-width: $s-border-width          !default;
+$xs-border-radius: $s-border-radius        !default;
+$xs-font-size: $s-font-size                !default;
+$xs-line-height: $s-line-height            !default;

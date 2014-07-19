@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// Example: @include prefixer(webkit ms, border-radius, $radii);
+// -----------------------------------------------------------------------------
+
+@mixin prefixer($prefixes, $property, $value...) {
+    @each $prefix in $prefixes {
+        @if $support-webkit and $prefix == webkit {
+            -webkit-#{$property}: $value;
+        }
+        @else if $support-mozilla and $prefix == moz {
+            -moz-#{$property}: $value;
+        }
+        @else if $support-microsoft and $prefix == ms {
+            -ms-#{$property}: $value;
+        }
+        @else if $support-opera and $prefix == o {
+            -o-#{$property}: $value;
+        }
+    }
+
+    #{$property}: $value;
+}
