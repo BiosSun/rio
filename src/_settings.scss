@@ -81,3 +81,15 @@ $rio-code-color: false;
 
 // 行内代码的背景颜色 -f
 $rio-code-bg: #f7f7f7;
+
+// 分割线
+// ---------------------------
+
+// 分割线宽度
+$rio-hr-width: 1px !default;
+
+// 分割线样式
+$rio-hr-style: solid !default;
+
+// 分割线颜色
+$rio-hr-color: $rio-block-el-border-color !default;

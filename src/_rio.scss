@@ -280,6 +280,6 @@
     hr {
         height: 0;
         border: 0 none;
-        border-bottom: 1px solid $rio-block-el-border-color;
+        border-bottom: $rio-hr-width $rio-hr-style $rio-hr-color;
     }
 }
