@@ -17,16 +17,28 @@ module.exports = function(grunt) {
             }
         },
         cssmin : {
-            nami : {
+            dist : {
                 files : {
                     'dist/rio.min.css' : 'dist/rio.css'
                 }
             }
         },
+        copy : {
+            dist : {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'dist/',
+                        src: ['**'],
+                        dest: 'doc/css/'
+                    }
+                ]
+            }
+        },
         watch : {
             sass : {
                 files : 'src/**/*.scss',
-                tasks : ['sass', 'cssmin']
+                tasks : ['sass', 'cssmin', 'copy']
             }
         }
     });
@@ -34,6 +46,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['sass', 'cssmin']);
+    grunt.registerTask('default', ['sass', 'cssmin', 'copy']);
 };
