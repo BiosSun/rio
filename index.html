@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Rio - 一个简洁的文字排版样式库</title>
+        <link rel="stylesheet" href="../dist/rio.css" />
+        <link rel="stylesheet" href="doc.css" />
+    </head>
+    <body>
+        <div id="page" class="rio">
+            <h1>Rio</h1>
+            <h2 class="tagline">一个简洁的文字排版样式库</h2>
+            <hr/>
+            <div id="catalogue">
+                <ul>
+                    <li><a href="#展示">展示</a></li>
+                    <li><a href="#说明">说明</a>
+                        <ul>
+                            <li><a href="#块级元素">块级元素</a>
+                                <ul>
+                                    <li><a href="#标题">标题 <small>（h1, h2, h3, h4, h5, h6）</small></a></li>
+                                    <li><a href="#段落">段落 <small>（p）</small></a></li>
+                                    <li><a href="#列表">列表</a>
+                                        <ul>
+                                            <li><a href="#无序列表">无序列表 <small>（ul）</small></a></li>
+                                            <li><a href="#有序列表">有序列表 <small>（ol）</small></a></li>
+                                            <li><a href="#定义列表">定义列表 <small>（dl）</small></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#表格">表格 <small>（table）</small></a></li>
+                                    <li><a href="#代码块">代码块 <small>（pre/code）</small></a></li>
+                                    <li><a href="#引用块">引用 <small>（blockquote）</small></a></li>
+                                    <li><a href="#分割线">分割线 <small>（hr）</small></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#行内元素">行内元素</a>
+                                <ul>
+                                    <li><a href="#斜体">斜体 <small>（i）</small></a></li>
+                                    <li><a href="#链接">链接 <small>（a）</small></a></li>
+                                    <li><a href="#上/下标">上/下标 <small>（sup, sub）</small></a></li>
+                                    <li><a href="#引用">引用 <small>（q）</small></a></li>
+                                    <li><a href="#代码">代码 <small>（code）</small></a></li>
+                                    <li><a href="#重要">重要 <small>（strong, b）</small></a></li>
+                                    <li><a href="#小号文字">小号文字 <small>（small）</small></a></li>
+                                    <li><a href="#标记">标记 <small>（mark）</small></a></li>
+                                    <li><a href="#缩写">缩写 <small>（abbr）</small></a></li>
+                                    <li><a href="#删除">删除 <small>（del）</small></a></li>
+                                    <li><a href="#图片">图片 <small>（image）</small></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#最后">最后</a></li>
+                </ul>
+            </div>
+
+            <h2 id="展示">展示</h2>
+
+                        这里有提供一些正式文章用以展示 Rio 的排版效果：
+
+            <ul>
+                <li><a href="cha-jing_cha-zhi-zao.html" target="_blank">茶经 · 茶之造</a></li>
+                <li><a href="sou-shen-ji_231_kong-zi-ye-meng.html" target="_blank">搜神记 · 二三一 · 孔子夜梦</a></li>
+                <li><a href="pride-and-prejudice_chapter-1.html" target="_blank">Pride And Prejudice · Chapter 1</a></li>
+            </ul>
+
+            <h2 id="说明">说明</h2>
+
+            <h3 id="块级元素">块级元素</h3>
+
+            <h4 id="标题">标题 <small>（h1, h2, h3, h4, h5, h6）</small></h4>
+
+            <div class="show-box show-title-box">
+                <h1>h1. 标题级别 1  <small>（次级标题）</small></h1>
+                <hr/>
+                <h2>h2. 标题级别 2  <small>（次级标题）</small></h2>
+                <hr/>
+                <h3>h3. 标题级别 3  <small>（次级标题）</small></h3>
+                <hr/>
+                <h4>h4. 标题级别 4  <small>（次级标题）</small></h4>
+                <hr/>
+                <h5>h5. 标题级别 5  <small>（次级标题）</small></h5>
+                <hr/>
+                <h6>h6. 标题级别 6  <small>（次级标题）</small></h6>
+            </div>
+
+            <p>
+                标题内的链接做了一些特殊处理：取消了链接颜色，并用下划线进行标识。
+            </p>
+
+            <div class="show-box show-title-box">
+                <h4>带有<a href="javascript:">链接</a>的标题</h4>
+            </div>
+
+            <h4 id="段落">段落 <small>（p）</small></h4>
+            <div class="show-box show-block-box">
+                <p>
+                    凡是有钱的单身汉，总想娶位太太，这已经成了一条举世公认的真理。
+                    这样的单身汉，每逢新搬到一个地方，四邻八舍虽然完全不了解他的性情如何，
+                    见解如何，可是，既然这样的一条真理早已在人们心目中根深蒂固，
+                    因此人们总是把他看作自己某一个女儿理所应得的一笔财产。
+                </p>
+                <p>有一天班纳特太太对她的丈夫说：“我的好老爷，尼日斐花园终于租出去了，你听说过没有？”</p>
+                <p>班纳特先生回答道，他没有听说过。</p>
+                <hr/>
+                <p>It is a truth universally acknowledged, that a single man in possession
+                    of a good fortune must be in want of a wife. However little known the
+                    feelings or views of such a man may be on his first entering a
+                    neighbourhood, this truth is so well fixed in the minds of the surrounding
+                    families, that he is considered as the rightful property of some one or
+                    other of their daughters.</p>
+                <p>"My dear Mr. Bennet," said his lady to him one day, "have you heard that
+                    Netherfield Park is let at last?"</p>
+                <p>Mr. Bennet replied that he had not.</p>
+            </div>
+
+            <h4 id="列表">列表</h4>
+            <h4 id="无序列表">无序列表 <small>（ul）</small></h4>
+            <div class="show-box show-block-box">
+                <ul>
+                    <li>
+                        无序列表 1
+                    </li>
+                    <li>
+                        无序列表 2
+                        <ul>
+                            <li>无序列表 2.1</li>
+                            <li>无序列表 2.3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        无序列表 3
+                        <ul>
+                            <li>无序列表 3.2</li>
+                            <li>无序列表 3.3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h4 id="有序列表">有序列表 <small>（ol）</small></h4>
+            <div class="show-box show-block-box">
+                <ol>
+                    <li>有序列表 1</li>
+                    <li>
+                        有序列表 2
+                        <ol>
+                            <li>有序列表 2.1</li>
+                            <li>有序列表 2.3</li>
+                        </ol>
+                    </li>
+                    <li>
+                        有序列表 3
+                        <ol>
+                            <li>有序列表 3.2</li>
+                            <li>有序列表 3.3</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+
+            <h4 id="定义列表">定义列表 <small>（dl）</small></h4>
+            <div class="show-box show-block-box">
+                <dl>
+                    <dt>定义列表 - 标题</dt>
+                    <dd>定义列表 - 内容</dd>
+                </dl>
+                <dl>
+                    <dt>定义列表 - 标题</dt>
+                    <dd>定义列表 - 内容</dd>
+                </dl>
+            </div>
+
+            <h4 id="表格">表格 <small>（table）</small></h4>
+            <p>所有单元格文本左对齐，标题单元格文字加粗，表头使用边框色作为背景色，表和行设置上下边框（没有单元格边框），表尾文字缩小并减淡。鼠标移到某一行上时高亮该行。</p>
+            <div class="show-box show-block-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>标题 1</th>
+                            <th>标题 2</th>
+                            <th>标题 3</th>
+                            <th>标题 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>标题单元格 1.1</th>
+                            <td>单元格 2.1</td>
+                            <td>单元格 3.1</td>
+                            <td>单元格 4.1</td>
+                        </tr>
+                        <tr>
+                            <th>标题单元格 1.2</th>
+                            <td>单元格 2.2</td>
+                            <td>单元格 3.2</td>
+                            <td>单元格 4.2</td>
+                        </tr>
+                        <tr>
+                            <th>标题单元格 1.3</th>
+                            <td>单元格 2.3</td>
+                            <td>单元格 3.3</td>
+                            <td>单元格 4.3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">* 表格脚注</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <h4 id="代码块">代码块 <small>（pre/code）</small></h4>
+            <p>代码块中文本使用比正文文本小一点的字号。</p>
+            <div class="show-box show-block-box">
+                <pre class="code javascript"><code class="javascript">/* ------------------------------------------------------------------------------------
+ * 注释文字
+ * ------------------------------------------------------------------------------------ */
+function say_hellow(name) {
+alert("Hello, " + name + "!");
+}
+
+say_hellow("World");</code></pre>
+            </div>
+            <h4 id="引用块">引用 <small>（blockquote）</small></h4>
+            <div class="show-box show-block-box">
+                <blockquote>
+                    凡是有钱的单身汉，总想娶位太太，这已经成了一条举世公认的真理。
+                    这样的单身汉，每逢新搬到一个地方，四邻八舍虽然完全不了解他的性情如何，
+                    见解如何，可是，既然这样的一条真理早已在人们心目中根深蒂固，
+                    因此人们总是把他看作自己某一个女儿理所应得的一笔财产。
+                </blockquote>
+            </div>
+            <h4 id="分割线">分割线 <small>（hr）</small></h4>
+            <div class="show-box show-block-box">
+                <p>1.</p>
+                <hr/>
+                <p>2.</p>
+                <hr/>
+                <p>3.</p>
+            </div>
+
+            <h3 id="行内元素">行内元素</h3>
+
+            <h4 id="斜体">斜体 <small>（i, em）</small></h4>
+            有两种元素被设置为斜体：<code>&lt;i&gt;</code> 和 <code>&lt;em&gt;</code>。
+            <p class="show-box">
+                <em>C 语言</em>的很多重要概念来源于由 <i>Martin Richards</i> 开发的 <em>BCPL 语言</em> 。
+            </p>
+
+            <h4 id="链接">链接 <small>（a）</small></h4>
+            <p>为了美观，去掉了链接文字默认的下划线，改为只在鼠标移上时显示（下划线由链接元素的下边框体现）。</p>
+            <p class="show-box">
+                <a href="/">C 语言</a>的很多重要概念来源于由 <a href="/">Martin Richards</a> 开发的 <a href="/">BCPL 语言</a>。
+            </p>
+
+            <h4 id="上/下标">上/下标 <small>（sup, sub）</small></h4>
+            <p>统一了上下标在各浏览器下的样式（文字大小，偏移）</p>
+            <p class="show-box">
+                C 语言<sup>高级语言</sup>的很多重要概念来源于由 Martin Richards<sup>[1]</sup> 开发的 BCPL 语言<sub>[2]</sub>。
+            </p>
+
+            <h4 id="引用">引用 <small>（q）</small></h4>
+            <p class="show-box">
+                <q>C 语言</q>的很多重要概念来源于由 <q>Martin Richards</q> 开发的 <q>BCPL 语言</q>。
+            </p>
+
+            <h4 id="代码">代码 <small>（code）</small></h4>
+            <p class="show-box">
+                <code>C 语言</code> 的很多重要概念来源于由 <code>Martin Richards</code> 开发的 <code>BCPL 语言</code> 。
+            </p>
+
+            <h4 id="重要">重要 <small>（strong, b）</small></h4>
+            <p>在 html5 中，<code>&lt;small&gt;</code> 以及 <code>&lt;b&gt;</code>
+                元素都具有“重要”的语义，区别尽在于轻重不同而已。</p>
+            <p class="show-box">
+                <strong>C 语言</strong> 的很多重要概念来源于由 <strong>Martin Richards</strong> 开发的 <strong>BCPL 语言</strong> 。
+            </p>
+
+            <h4 id="小号文字">小号文字 <small>（small）</small></h4>
+            <p>普通文字的 90% 大小，并设置为较浅的颜色。</p>
+            <div class="show-box">
+                C 语言的很多重要概念来源于由 Martin Richards 开发的 BCPL 语言。
+                <hr />
+                <small>C 语言的很多重要概念来源于由 Martin Richards 开发的 BCPL 语言。</small>
+            </div>
+
+            <h4 id="标记">标记 <small>（mark）</small></h4>
+            <p class="show-box">
+                C 语言的<mark>很多重要概念来源于由 Martin Richards 开发的 BCPL 语言<mark>。
+            </p>
+
+            <h4 id="缩写">缩写 <small>（abbr）</small></h4>
+            <p class="show-box">
+                C 语言的很多重要概念来源于由 Martin Richards 开发的 <abbr title="Basic Combined Programming Language">BCPL</abbr> 语言。
+            </p>
+
+            <h4 id="删除">删除 <small>（del）</small></h4>
+            <p class="show-box">
+                <del>C 语言</del> 的很多重要概念来源于由 <del>Martin Richards</del> 开发的 <del>BCPL 语言</del>。
+            </p>
+
+            <h4 id="图片">图片 <small>（image）</small></h4>
+            <p class="show-box">
+                <img src="http://biossun.org/resource/images/logo.png" alt="Bios Sun" title="Bios Sun" />
+            </p>
+
+            <h2 id="最后">最后</h2>
+
+            <p>
+                Rio 仅仅只是一个纯 CSS 的样式库，它只能为使用者提供一个经过大量调整后在各种常见客户端环境下都还不错的排版结构，
+                因为限于文字渲染等一些无法控制的因素，使得 Rio 无法保证所有客户端都能呈现一致的效果。</p>
+
+            <p>该样式库以 HTML5 为兼容标准，一切在 HTML5 中已废弃的标签都已不再支持。</p>
+
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+        <script></script>
+
+    </body>
+</html>
