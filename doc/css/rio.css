@@ -160,6 +160,7 @@
   color: #333333;
   white-space: pre;
   overflow: auto;
+  line-height: 1.48;
 }
 .rio blockquote {
   border-left: 0.4em solid #f0f0f0;

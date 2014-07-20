@@ -263,6 +263,10 @@
             color: $rio-text;
             white-space: pre;
             overflow: auto;
+
+            @if $rio-code-block-line-height != false {
+                line-height: $rio-code-block-line-height;
+            }
         }
     }
 
