@@ -147,8 +147,12 @@
   background: #f0f0f0;
 }
 .rio th, .rio td {
-  padding: 0.7em 1.4em;
+  padding: 0.7em 1.4em 0.7em 0;
   border-bottom: 1px solid #f0f0f0;
+  _padding: 0.7em 1.4em;
+}
+.rio th:first-child, .rio td:first-child {
+  padding-left: 1.4em;
 }
 .rio th {
   font-weight: 700;
