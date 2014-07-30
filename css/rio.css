@@ -82,13 +82,14 @@
 .rio code {
   font-size: 0.9em;
   background: #f7f7f7;
-  padding: 0.2em 0.5em;
+  padding: 0.3em 0.5em;
   border-radius: 0.3em;
   vertical-align: middle;
   white-space: nowrap;
 }
 .rio img {
   max-width: 100%;
+  vertical-align: middle;
 }
 .rio h1, .rio h2, .rio h3, .rio h4, .rio h5, .rio h6 {
   font-weight: 500;
