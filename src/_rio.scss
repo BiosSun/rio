@@ -139,17 +139,19 @@
     code {
         font-size: $rio-code-size;
 
-        @if $rio-code-color != false {
+        @if variable-exists(rio-code-color) {
             color: $rio-code-color;
         }
 
-        @if $rio-code-bg != false {
+        @if variable-exists(rio-code-bg) {
             background: $rio-code-bg;
         }
 
         padding: 0.2em 0.5em;
-        white-space: nowrap;
         border-radius: 0.3em;
+
+        vertical-align: middle;
+        white-space: nowrap;
     }
 
     // 图片
@@ -275,7 +277,7 @@
             white-space: pre;
             overflow: auto;
 
-            @if $rio-code-block-line-height != false {
+            @if variable-exists(rio-code-block-line-height) {
                 line-height: $rio-code-block-line-height;
             }
         }

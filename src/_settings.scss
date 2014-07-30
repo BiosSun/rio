@@ -95,13 +95,13 @@ $rio-code-size: 0.9em;
 // 代码字体
 $rio-code-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 
-// 行内代码的字体颜色 -f
-$rio-code-color: false;
+// 行内代码的字体颜色
+// $rio-code-color: #555;
 
-// 行内代码的背景颜色 -f
+// 行内代码的背景颜色
 $rio-code-bg: #f7f7f7;
 
-// 代码块行高 -f
+// 代码块行高
 $rio-code-block-line-height: 1.48;
 
 // 分割线
