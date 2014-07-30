@@ -72,10 +72,10 @@
             outline: 1px dotted $quiet-font-color;
         }
 
+        &:visited { color: $link-visited-color; }
         &:hover   { color: $link-hover-color;   }
         &:focus   { color: $link-focus-color;   }
         &:active  { color: $link-active-color;  }
-        &:visited { color: $link-visited-color; }
     }
 
     // 加粗，着重
