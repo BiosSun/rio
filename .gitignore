@@ -1,24 +1,37 @@
-# 一些编译器生成的临时文件
+# 一些编辑器生成的临时文件
 *~
++.#*
 \#*\#
 
 # 日志文件
 *.log
 
+# 临时文件存放目录
+.tmp/
+
+# windows 中存放文件说明信息的文件，一般是供开发人员自己标记项目文件用的，不用推送
+descript.ion
+
 # windows 的缩略图文件
 Thumbs.db
 
-# node.js 的依赖模块存储目录
+# node.js 的模块存储目录
 node_modules/
 
-# sea.js 的依赖模块存储目录
+# sea.js 的模块存储目录
 sea-modules/
 
 # sass/scss 的编译缓存文件存储目录
 .sass-cache/
 
+# bower 的包存储目录
+bower_components/
+
 # 大多静态站点生成工具默认存放生成页面的目录
 _site/
+
+# gem 项目会在根目录生成安装包
+/*.gem
 
 #-----------------------------
 # 项目相关
