@@ -4,7 +4,7 @@
 
 %rio-small {
     font-size: 90%;
-    color: $rio-text-light;
+    color: $quiet-font-color;
 }
 
 %rio-block {
@@ -20,19 +20,15 @@
     // 全局样式
     // ---------------------------
 
-    @if $rio-text-size != false {
-        font-size: $rio-text-size;
-    }
 
-    @if $rio-line-height != false {
-        line-height: $rio-line-height;
-    }
+    font-size: $rio-font-size-base;
+    line-height: $rio-line-height;
 
-    @if $rio-text-family != false {
+    @if variable-exists(rio-text-family) {
         font-family: $rio-text-family;
     }
 
-    @if $rio-text-align != false {
+    @if variable-exists(rio-text-align) {
         text-align: $rio-text-align;
     }
 
@@ -72,7 +68,7 @@
         }
 
         &:focus {
-            outline: 1px dotted $rio-text-light;
+            outline: 1px dotted $quiet-font-color;
         }
     }
 
@@ -125,7 +121,7 @@
 
     // 引用
     q {
-        color: $rio-text-light;
+        color: $quiet-font-color;
     }
 
     // 小号文字，主用于旁注功能
@@ -147,7 +143,7 @@
 
         padding: 2px 0.5em;
         white-space: nowrap;
-        @include border-radius(0.3em);
+        border-radius: 0.3em;
     }
 
     // 图片
@@ -176,7 +172,7 @@
         }
 
         a {
-            color: $rio-text;
+            color: $font-color;
             border-bottom: 1px dotted;
 
             &:hover, &:focus {
@@ -218,7 +214,10 @@
     li {
         ul, ol {
             padding: 0.17em 0 0;
-            @include margin(0 false);
+            margin: {
+                top: 0;
+                bottom: 0;
+            }
         }
 
         ul {
@@ -249,10 +248,7 @@
         padding: 0.7em 1.4em 0.7em 0;
         border-bottom: 1px solid $rio-block-el-border-color;
 
-        @if $support-ie6 {
-            _padding: 0.7em 1.4em;
-        }
-
+        _padding: 0.7em 1.4em;
 
         &:first-child {
             padding-left: 1.4em;
@@ -269,7 +265,7 @@
             display: block;
             padding: 1em 1.2em;
             background: $rio-block-el-bg-color;
-            color: $rio-text;
+            color: $font-color;
             white-space: pre;
             overflow: auto;
 
@@ -286,7 +282,7 @@
         margin-left: 0;
         margin-right: 0;
         padding: 1em 1.2em;
-        color: $rio-text-light;
+        color: $quiet-font-color;
     }
 
     // 分割线

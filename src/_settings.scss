@@ -3,32 +3,51 @@
 // Rio 类名
 $rio-class: rio !default;
 
-// 字体大小 -f
-$rio-text-size: false !default;
 
-// 文字行高 -f
+// 文字
+// ---------------------------
+
+// 字体大小
+$rio-font-size-base: if(variable-exists("font-size-base"), $font-size-base, 14px) !default;
+
+// 文字行高
 $rio-line-height: 1.75 !default;
 
-// 文字对齐方式 -f
-$rio-text-align: left !default;
+// 文字行高计算量
+$rio-line-height-computed: floor($rio-font-size-base * $rio-line-height);
 
-// 字体，设置为 false 则取消字体设置
-$rio-text-family: false !default;
+// 文字对齐方式
+// $rio-text-align: left !default;
+
+// 字体
+// $rio-text-family: sans-serif !default;
+
 
 // 颜色
 // ---------------------------
 
-// 文字颜色
-$rio-text: $text-color !default;
+// 文本颜色
+$font-color: #333 !default;
 
-// 文字置灰颜色
-$rio-text-light: $text-unstressed-color !default;
+// 次要文本颜色
+$quiet-font-color: #999 !default;
+
+// 强调文本颜色
+$loud-font-color: #222 !default;
+
+// 链接颜色
+$link-color:                    #428bca                    !default;
+$link-hover-color:              darken($link-color, 15%)   !default;
+$link-focus-color:              $link-hover-color          !default;
+$link-active-color:             $link-hover-color          !default;
+$link-visited-color:            $link-color                !default;
 
 // 块级元素边框颜色（若需要）
 $rio-block-el-border-color: #f0f0f0 !default;
 
 // 块级元素背景颜色（若需要）
 $rio-block-el-bg-color: #fafafa !default;
+
 
 // 标题
 // ---------------------------

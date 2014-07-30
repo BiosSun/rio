@@ -1,5 +1,0 @@
-@charset "utf-8";
-
-@mixin absolute($coordinates: false false false false, $z-index: false) {
-    @include position(absolute, $coordinates, $z-index);
-}

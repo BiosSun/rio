@@ -10,8 +10,8 @@
 }
 
 .rio {
+  font-size: 14px;
   line-height: 1.75;
-  text-align: left;
 }
 .rio > *:first-child {
   margin-top: 0;
@@ -72,8 +72,6 @@
   background: #f7f7f7;
   padding: 2px 0.5em;
   white-space: nowrap;
-  -moz-border-radius: 0.3em;
-  -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
 }
 .rio img {

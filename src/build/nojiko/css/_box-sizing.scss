@@ -1,6 +1,0 @@
-@charset "utf-8";
-
-@mixin box-sizing ($box) {
-    //  content-box | border-box | inherit
-    @include prefixer(webkit moz, box-sizing, $box);
-}
