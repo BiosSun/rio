@@ -35,6 +35,9 @@
 .rio a:focus {
   outline: 1px dotted #999999;
 }
+.rio a:visited {
+  color: #428bca;
+}
 .rio a:hover {
   color: #2a6496;
 }
@@ -43,9 +46,6 @@
 }
 .rio a:active {
   color: #2a6496;
-}
-.rio a:visited {
-  color: #428bca;
 }
 .rio b, .rio strong {
   font-weight: 700;
