@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     // lineNumbers: true,
                     unixNewlines: true,
                     style: 'expanded',
-                    precision: 10
+                    precision: 11
                 },
                 files : {
                     'dist/rio.css' : 'src/build/rio.scss'
