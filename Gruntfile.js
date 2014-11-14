@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     precision: 11
                 },
                 files : {
-                    'dist/rio.css' : 'src/build/rio.scss'
+                    'dist/rio.css' : 'sass/build/rio.scss'
                 }
             }
         },
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         },
         watch : {
             sass : {
-                files : 'src/**/*.scss',
+                files : 'sass/**/*.scss',
                 tasks : ['sass', 'cssmin', 'copy']
             }
         }
