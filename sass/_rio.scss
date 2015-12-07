@@ -16,10 +16,8 @@
 
 .#{$rio-class} {
 
-
     // 全局样式
     // ---------------------------
-
 
     font-size: $rio-font-size-base;
     line-height: $rio-line-height;
@@ -181,7 +179,7 @@
         }
 
         a {
-            color: $font-color;
+            color: inherit;
             border-bottom: 1px dotted;
 
             &:hover, &:focus {
