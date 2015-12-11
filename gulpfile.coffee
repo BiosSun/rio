@@ -22,7 +22,8 @@ gulp.task 'sass', ->
         .pipe minifyCss {
             advanced: false,
             aggressiveMerging: false,
-            compatibility: 'ie7'
+            compatibility: 'ie7',
+            keepSpecialComments: 1
         }
         .pipe rename { suffix: '.min' }
         .pipe gulp.dest './dist'
