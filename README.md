@@ -47,7 +47,7 @@ $rio-line-height: 1.75;
 @import "rio";
 ```
 
-```
+```html
 <div class="rio">
     Your article content.
 </div>
