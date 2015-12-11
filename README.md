@@ -11,13 +11,13 @@ Install
 
 Bower:
 
-```
+```shell
 $ bower install rio --save
 ```
 
 NPM:
 
-```
+```shell
 $ npm install --save rio-typesetting
 ```
 
@@ -26,7 +26,7 @@ $ npm install --save rio-typesetting
 
 If use css file:
 
-```
+```html
 <link href="rio.css" rel="stylesheet">
 <!-- or <link href="rio.min.css" rel="stylesheet"> -->
 <div class="rio">
@@ -36,7 +36,7 @@ If use css file:
 
 If use sass file:
 
-```
+```scss
 // custom options
 $rio-class: rio;
 $rio-font-size-base: 12px;
