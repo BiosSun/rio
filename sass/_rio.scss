@@ -11,7 +11,8 @@
 }
 
 %rio-block {
-    margin: 1.27em 0;
+    margin-top: $rio-block-el-margin-top;
+    margin-bottom: $rio-block-el-margin-bottom;
 }
 
 // 样式设置
