@@ -75,34 +75,34 @@ $rio-h6-size: 0.9em !default;       // 六级...
 // ---------------------------
 
 // 左外边距
-$rio-list-margin-left: 2em;
+$rio-list-margin-left: 2em !default;
 
 // mark
 // ---------------------------
 
 // 背景色 -f
-$rio-mark-bg: #fffda0;
+$rio-mark-bg: #fffda0 !default;
 
 // 内边距 -f
-$rio-mark-padding: 1px 0;
+$rio-mark-padding: 1px 0 !default;
 
 // code
 // ---------------------------
 
 // 代码文字大小
-$rio-code-size: 0.9em;
+$rio-code-size: 0.9em !default;
 
 // 代码字体
-$rio-code-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+$rio-code-family: Menlo,Monaco,Consolas,"Courier New",monospace !default;
 
 // 行内代码的字体颜色
-// $rio-code-color: #555;
+// $rio-code-color: #555 !default;
 
 // 行内代码的背景颜色
-$rio-code-bg: #f7f7f7;
+$rio-code-bg: #f7f7f7 !default;
 
 // 代码块行高
-$rio-code-block-line-height: 1.48;
+$rio-code-block-line-height: 1.48 !default;
 
 // 分割线
 // ---------------------------
