@@ -64,13 +64,14 @@
     a {
         text-decoration: none;
 
-        &:hover, &:focus {
+        &:hover {
             border-bottom: 1px solid;
             text-decoration: none;
         }
 
         &:focus {
             outline: 1px dotted $quiet-font-color;
+            text-decoration: none;
         }
 
         @if $link-visited-color {
