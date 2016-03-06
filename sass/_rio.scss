@@ -69,15 +69,25 @@
             text-decoration: none;
         }
 
-
         &:focus {
             outline: 1px dotted $quiet-font-color;
         }
 
-        &:visited { color: $link-visited-color; }
-        &:hover   { color: $link-hover-color;   }
-        &:focus   { color: $link-focus-color;   }
-        &:active  { color: $link-active-color;  }
+        @if $link-visited-color {
+            &:visited { color: $link-visited-color; }
+        }
+
+        @if $link-hover-color {
+            &:hover   { color: $link-hover-color;   }
+        }
+
+        @if $link-focus-color {
+            &:focus   { color: $link-focus-color;   }
+        }
+
+        @if $link-active-color {
+            &:active  { color: $link-active-color;  }
+        }
     }
 
     // 加粗，着重
