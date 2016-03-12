@@ -37,13 +37,14 @@
   text-decoration: none;
 }
 
-.rio a:hover, .rio a:focus {
+.rio a:hover {
   border-bottom: 1px solid;
   text-decoration: none;
 }
 
 .rio a:focus {
   outline: 1px dotted #999;
+  text-decoration: none;
 }
 
 .rio a:visited {
@@ -219,7 +220,6 @@
   display: block;
   padding: 1em 1.2em;
   background: #fafafa;
-  color: #333;
   white-space: pre;
   overflow: auto;
   line-height: 1.48;
