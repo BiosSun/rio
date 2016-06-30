@@ -65,8 +65,9 @@
         text-decoration: none;
 
         &:hover {
-            border-bottom: 1px solid;
-            text-decoration: none;
+            text-decoration: underline;
+            text-decoration-skip: ink;
+            text-decoration-position: under;
         }
 
         &:focus {
