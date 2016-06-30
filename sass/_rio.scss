@@ -7,7 +7,7 @@
 
 %rio-small {
     font-size: 90%;
-    color: $text-color-quiet;
+    color: $rio-text-color-quiet;
 }
 
 %rio-block {
@@ -70,25 +70,14 @@
         }
 
         &:focus {
-            outline: 1px dotted $text-color-quiet;
+            outline: 1px dotted $rio-text-color-quiet;
             text-decoration: none;
         }
 
-        @if $link-visited-color {
-            &:visited { color: $link-visited-color; }
-        }
-
-        @if $link-hover-color {
-            &:hover   { color: $link-hover-color;   }
-        }
-
-        @if $link-focus-color {
-            &:focus   { color: $link-focus-color;   }
-        }
-
-        @if $link-active-color {
-            &:active  { color: $link-active-color;  }
-        }
+        &:visited { color: $rio-link-visited-color; }
+        &:hover   { color: $rio-link-hover-color;   }
+        &:focus   { color: $rio-link-focus-color;   }
+        &:active  { color: $rio-link-active-color;  }
     }
 
     // 加粗，着重
@@ -140,7 +129,7 @@
 
     // 引用
     q {
-        color: $text-color-quiet;
+        color: $rio-text-color-quiet;
     }
 
     // 小号文字，主用于旁注功能
@@ -199,7 +188,7 @@
 
             &:hover, &:focus {
                 text-decoration: none;
-                color: $link-color;
+                color: $rio-link-color;
             }
         }
 
@@ -303,7 +292,7 @@
         margin-left: 0;
         margin-right: 0;
         padding: 1em 1.2em;
-        color: $text-color-quiet;
+        color: $rio-text-color-quiet;
     }
 
     // 分割线
