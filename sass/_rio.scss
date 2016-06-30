@@ -7,7 +7,7 @@
 
 %rio-small {
     font-size: 90%;
-    color: $quiet-font-color;
+    color: $text-color-quiet;
 }
 
 %rio-block {
@@ -70,7 +70,7 @@
         }
 
         &:focus {
-            outline: 1px dotted $quiet-font-color;
+            outline: 1px dotted $text-color-quiet;
             text-decoration: none;
         }
 
@@ -140,7 +140,7 @@
 
     // 引用
     q {
-        color: $quiet-font-color;
+        color: $text-color-quiet;
     }
 
     // 小号文字，主用于旁注功能
@@ -303,7 +303,7 @@
         margin-left: 0;
         margin-right: 0;
         padding: 1em 1.2em;
-        color: $quiet-font-color;
+        color: $text-color-quiet;
     }
 
     // 分割线
