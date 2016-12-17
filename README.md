@@ -18,7 +18,7 @@ $ bower install rio --save
 NPM:
 
 ```shell
-$ npm install --save rio-typesetting
+$ npm install rio-typesetting --save
 ```
 
 <small>Note：因为 rio 这个名称已被注册，因此在使用 npm 安装时请注意包名为 rio-typesetting，但只有这里有所不同，在其它地方，项目名称仍为 rio。</small>
