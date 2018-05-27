@@ -28,7 +28,7 @@ $rio-text-color-loud:          if(variable-exists("text-color-loud"), $text-colo
 
 // 链接颜色
 $rio-link-color:               if(variable-exists("link-color"), $link-color, #428bca)                                  !default;
-$rio-link-hover-color:         if(variable-exists("link-hover-color"), $link-hover-color, darken($rio-link-color, 15%)) !default;
+$rio-link-hover-color:         if(variable-exists("link-hover-color"), $link-hover-color, #2a6496)                      !default;
 $rio-link-focus-color:         if(variable-exists("link-focus-color"), $link-focus-color, $rio-link-hover-color)        !default;
 $rio-link-active-color:        if(variable-exists("link-active-color"), $link-active-color, $rio-link-hover-color)      !default;
 $rio-link-visited-color:       if(variable-exists("link-visited-color"), $link-visited-color, $rio-link-color)          !default;
