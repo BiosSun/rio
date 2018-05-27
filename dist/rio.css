@@ -39,7 +39,8 @@
 
 .rio a:hover {
   text-decoration: underline;
-  text-decoration-skip: ink;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink;
   text-decoration-position: under;
 }
 
