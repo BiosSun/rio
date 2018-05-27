@@ -47,7 +47,7 @@
     }
 
     // 代码字体
-    @if $rio-code-family != false {
+    @if $rio-code-family {
         code, pre, var {
             font-family: $rio-code-family;
         }
@@ -109,11 +109,11 @@
 
     // 标记，高亮
     mark {
-        @if $rio-mark-bg != false {
+        @if $rio-mark-bg {
             background: $rio-mark-bg;
         }
 
-        @if $rio-mark-padding != false {
+        @if $rio-mark-padding {
             padding: $rio-mark-padding;
         }
     }
@@ -167,15 +167,15 @@
     h1, h2, h3, h4, h5, h6 {
         font-weight: $rio-title-weight;
 
-        @if $rio-title-line-height != false {
+        @if $rio-title-line-height {
             line-height: $rio-title-line-height;
         }
 
-        @if $rio-title-margin-top != false {
+        @if $rio-title-margin-top {
             margin-top: $rio-title-margin-top;
         }
 
-        @if $rio-title-margin-bottom != false {
+        @if $rio-title-margin-bottom {
             margin-bottom: $rio-title-margin-bottom;
         }
 
