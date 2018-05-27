@@ -1,4 +1,4 @@
-/*! Rio - v0.2.6 - Bios Sun <biossun@gmail.com> - https://github.com/BiosSun/rio
+/*! Rio - v0.3.1 - Bios Sun <biossun@gmail.com> - https://github.com/BiosSun/rio
     ========================================================================== */
 .rio small, .rio tfoot {
   font-size: 90%;
@@ -200,7 +200,7 @@
   background: #fafafa;
 }
 
-.rio thead tr, .rio tr:hover {
+.rio thead tr, .rio tbody tr:hover {
   background: #f0f0f0;
 }
 
@@ -212,6 +212,14 @@
 
 .rio th:first-child, .rio td:first-child {
   padding-left: 1.4em;
+}
+
+.rio th > :first-child, .rio td > :first-child {
+  margin-top: 0;
+}
+
+.rio th > :last-child, .rio td > :last-child {
+  margin-bottom: 0;
 }
 
 .rio th {
