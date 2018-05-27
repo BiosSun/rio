@@ -262,6 +262,14 @@
         &:first-child {
             padding-left: 1.4em;
         }
+
+        > :first-child {
+            margin-top: 0;
+        }
+        
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
 
     th {
