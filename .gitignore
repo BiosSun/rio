@@ -1,38 +1,104 @@
 # 一些编辑器生成的临时文件
 *~
-+.#*
+.#*
 \#*\#
 
 # 日志文件
 *.log
 
+# 私有密钥文件
+*.pem
+
 # 临时文件存放目录
 .tmp/
 
-# windows 中存放文件说明信息的文件，一般是供开发人员自己标记项目文件用的，不用推送
-descript.ion
+# 过滤掉其它版本控制工具的相关文件
+.svn
 
-# windows 的缩略图文件
-Thumbs.db
 
-# node.js 的模块存储目录
+#-----------------------------
+# Front-End
+#-----------------------------
+
+# node 的模块存储目录
 node_modules/
 
-# sea.js 的模块存储目录
-sea-modules/
+# npm 的 debug 日志文件
+npm-debug.log
+
+# yarn 的 debug 日志文件
+yarn-debug.log
+
+# bower 的模块存储目录
+bower_components/
 
 # sass/scss 的编译缓存文件存储目录
 .sass-cache/
 
-# bower 的包存储目录
-bower_components/
-
 # 大多静态站点生成工具默认存放生成页面的目录
 _site/
+
+
+#-----------------------------
+# Windows
+#-----------------------------
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+#-----------------------------
+# OSX
+#-----------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+#-----------------------------
+# Other
+#-----------------------------
 
 # gem 项目会在根目录生成安装包
 /*.gem
 
+# chrome 扩展的打包文件
+*.crx
+
+
 #-----------------------------
 # 项目相关
 #-----------------------------
+
+yarn.lock
