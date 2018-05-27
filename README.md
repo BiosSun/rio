@@ -9,10 +9,10 @@ Rio 提供一个简洁的文字排版样式库。
 Install
 -------
 
-Bower:
+Yarn:
 
 ```shell
-$ bower install rio --save
+$ yarn add rio-typesetting
 ```
 
 NPM:
@@ -21,7 +21,13 @@ NPM:
 $ npm install rio-typesetting --save
 ```
 
-<small>Note：因为 rio 这个名称已被注册，因此在使用 npm 安装时请注意包名为 rio-typesetting，但只有这里有所不同，在其它地方，项目名称仍为 rio。</small>
+Bower:
+
+```shell
+$ bower install rio --save
+```
+
+<small>Note：因为 rio 这个名称已被注册，因此在使用 npm 或 yarn 安装时请注意包名为 rio-typesetting，但只有这里有所不同，在其它地方，项目名称仍为 rio。</small>
 
 
 如果使用 CSS 文件，请按照如下方式在您的页面中引入并使用：
