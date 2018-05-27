@@ -13,15 +13,6 @@ $rio-font-size-base:           if(variable-exists("font-size-base"), $font-size-
 // 文字行高
 $rio-line-height:              1.75                                                                                     !default;
 
-// 文字行高计算量
-$rio-line-height-computed:     floor($rio-font-size-base * $rio-line-height);
-
-// 文字对齐方式
-// $rio-text-align:            left                                                                                     !default;
-
-// 字体
-// $rio-text-family:           sans-serif                                                                               !default;
-
 
 // 颜色
 // ---------------------------
