@@ -256,6 +256,7 @@
         padding: 0.7em 1.4em 0.7em 0;
         border-bottom: 1px solid $rio-block-el-border-color;
 
+        // TODO: 无须再兼容低版本 IE
         _padding: 0.7em 1.4em;
 
         &:first-child {
