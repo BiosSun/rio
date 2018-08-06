@@ -32,12 +32,12 @@
                             </li>
                             <li><a href="#行内元素">行内元素</a>
                                 <ul>
-                                    <li><a href="#斜体">斜体</a> <small>（i）</small></li>
+                                    <li><a href="#强调">强调</a> <small>（em, i）</small></li>
+                                    <li><a href="#重要">重要</a> <small>（strong, b）</small></li>
                                     <li><a href="#链接">链接</a> <small>（a）</small></li>
                                     <li><a href="#上/下标">上/下标</a> <small>（sup, sub）</small></li>
                                     <li><a href="#引用">引用</a> <small>（q）</small></li>
                                     <li><a href="#代码">代码</a> <small>（code）</small></li>
-                                    <li><a href="#重要">重要</a> <small>（strong, b）</small></li>
                                     <li><a href="#小号文字">小号文字</a> <small>（small）</small></li>
                                     <li><a href="#标记">标记</a> <small>（mark）</small></li>
                                     <li><a href="#缩写">缩写</a> <small>（abbr）</small></li>
@@ -245,10 +245,16 @@ say_hellow("World");</code></pre>
 
             <h3 id="行内元素">行内元素</h3>
 
-            <h4 id="斜体">斜体 <small>（i, em）</small></h4>
-            有两种元素被设置为斜体：<code>&lt;i&gt;</code> 和 <code>&lt;em&gt;</code>。
+            <h4 id="强调">强调 <small>（em, i）</small></h4>
+            <p><code>&lt;em&gt;</code> 表示强调内容，按惯例将其设为斜体，另外相应地，<code>&lt;i&gt;</code> 元素也被设置为相同样式：</p>
             <p class="show-box">
                 <em>C 语言</em>的很多重要概念来源于由 <i>Martin Richards</i> 开发的 <em>BCPL 语言</em> 。
+            </p>
+
+            <h4 id="重要">重要 <small>（strong, b）</small></h4>
+            <p><code>&lt;strong&gt;</code> 表示重要内容，按惯例将其设为粗体，同样 <code>&lt;b&gt;</code> 元素也被设置为相同样式：</p>
+            <p class="show-box">
+                <strong>C 语言</strong> 的很多重要概念来源于由 <strong>Martin Richards</strong> 开发的 <strong>BCPL 语言</strong> 。
             </p>
 
             <h4 id="链接">链接 <small>（a）</small></h4>
@@ -271,13 +277,6 @@ say_hellow("World");</code></pre>
             <h4 id="代码">代码 <small>（code）</small></h4>
             <p class="show-box">
                 <code>C 语言</code> 的很多重要概念来源于由 <code>Martin Richards</code> 开发的 <code>BCPL 语言</code> 。
-            </p>
-
-            <h4 id="重要">重要 <small>（strong, b）</small></h4>
-            <p>在 html5 中，<code>&lt;small&gt;</code> 以及 <code>&lt;b&gt;</code>
-                元素都具有“重要”的语义，区别尽在于轻重不同而已。</p>
-            <p class="show-box">
-                <strong>C 语言</strong> 的很多重要概念来源于由 <strong>Martin Richards</strong> 开发的 <strong>BCPL 语言</strong> 。
             </p>
 
             <h4 id="小号文字">小号文字 <small>（small）</small></h4>
