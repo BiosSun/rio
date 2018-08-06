@@ -215,11 +215,12 @@
             <h4 id="代码块">代码块 <small>（pre/code）</small></h4>
             <p>代码块中文本使用比正文文本小一点的字号。</p>
             <div class="show-box show-block-box">
-                <pre class="code javascript"><code class="javascript">/* ------------------------------------------------------------------------------------
- * 注释文字
- * ------------------------------------------------------------------------------------ */
+                <pre class="code javascript"><code class="javascript">/**
+ * Use the input name to say hello.
+ * @param {string} name - a name;
+ */
 function say_hellow(name) {
-alert("Hello, " + name + "!");
+    alert("Hello, " + name + "!");
 }
 
 say_hellow("World");</code></pre>
