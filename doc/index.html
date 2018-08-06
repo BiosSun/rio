@@ -5,14 +5,15 @@
         <title>Rio - 一个简洁的文字排版样式库</title>
         <link rel="stylesheet" href="css/rio.css" />
         <link rel="stylesheet" href="css/doc.css" />
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     </head>
     <body>
         <div id="page" class="rio">
             <h1>Rio</h1>
             <h2 class="tagline">一个简洁的文字排版样式库</h2>
             <hr/>
-            <div id="catalogue">
-                <ul>
+            <div id="catalogue" data-simplebar>
+                <ul id="catalogue-list">
                     <li><a href="#展示">展示</a></li>
                     <li><a href="#说明">说明</a>
                         <ul>
@@ -345,9 +346,7 @@ say_hellow("World");</code></pre>
          }
         </style>
 
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
-        <script></script>
+        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 
     </body>
 </html>

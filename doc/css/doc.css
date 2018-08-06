@@ -35,9 +35,35 @@ a {
     _overflow: auto;
 }
 
-#catalogue > ul {
+#catalogue-list {
     margin: 60px 3em 3em 3em;
     float: right;
+}
+
+#catalogue .simplebar-track {
+    width: 16px;
+}
+
+#catalogue .simplebar-scrollbar {
+    width: 4px;
+    right: 6px;
+}
+
+#catalogue .simplebar-scrollbar:before {
+    background: #999;
+}
+
+#catalogue .simplebar-track.horizontal {
+    height: 16px;
+    width: auto;
+}
+
+#catalogue .simplebar-track.horizontal .simplebar-scrollbar {
+    height: 4px;
+    bottom: 6px;
+    
+    width: auto;
+    right: auto;    
 }
 
 #catalogue a {
