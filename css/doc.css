@@ -2,7 +2,6 @@ body {
     font: 13px/1.48 "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
     color: #333;
     margin: 0;
-    background: #f0f0f0;
 }
 
 a {
@@ -12,28 +11,63 @@ a {
 #page {
     position: relative;
     width: 700px;
-    margin: 10px 0 10px 100px;
-    padding: 50px 49px;
-    border: 1px solid #d7d7d7;
-    background: #fff;
+    margin: 0 0 0 37%;
+    padding: 50px;
 }
 
 #page.displayed {
     width: 660px;
     font-size: 14px;
+    margin: 50px auto;
 }
 
 #catalogue {
-    width: 300px;
+    width: 37%;
     height: 100%;
-    padding: 0 20px 0 10px;
 
     position: fixed;
-    left: 900px;
+    left: 0;
     top: 0;
+    
+    background: #f0f0f0;
 
     overflow: hidden;
     _overflow: auto;
+}
+
+#catalogue-list {
+    margin: 60px 3em 3em 3em;
+    float: right;
+}
+
+#catalogue .simplebar-track {
+    width: 16px;
+}
+
+#catalogue .simplebar-scrollbar {
+    width: 4px;
+    right: 6px;
+}
+
+#catalogue .simplebar-scrollbar:before {
+    background: #999;
+}
+
+#catalogue .simplebar-track.horizontal {
+    height: 16px;
+    width: auto;
+}
+
+#catalogue .simplebar-track.horizontal .simplebar-scrollbar {
+    height: 4px;
+    bottom: 6px;
+    
+    width: auto;
+    right: auto;    
+}
+
+#catalogue a {
+    color: #333;
 }
 
 #catalogue:hover {
