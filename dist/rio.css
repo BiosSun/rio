@@ -1,4 +1,4 @@
-/*! Rio - v0.3.1 - Bios Sun <biossun@gmail.com> - https://github.com/BiosSun/rio
+/*! Rio - v0.4.0 - Bios Sun <biossun@gmail.com> - https://github.com/BiosSun/rio
     ========================================================================== */
 .rio small, .rio tfoot {
   font-size: 90%;
@@ -34,13 +34,13 @@
 }
 
 .rio a {
+  color: #428bca;
   text-decoration: none;
 }
 
 .rio a:hover {
   text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
   text-decoration-position: under;
 }
 
@@ -106,11 +106,10 @@
 }
 
 .rio code {
-  font-size: 0.9em;
+  font-size: 0.93em;
   background: #f7f7f7;
   padding: 0.3em 0.5em;
   border-radius: 0.3em;
-  vertical-align: middle;
   white-space: nowrap;
 }
 
@@ -248,4 +247,12 @@
   height: 0;
   border: 0 none;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.rio li > *:first-child, .rio th > *:first-child, .rio td > *:first-child {
+  margin-top: 0;
+}
+
+.rio li > *:last-child, .rio th > *:last-child, .rio td > *:last-child {
+  margin-bottom: 0;
 }
