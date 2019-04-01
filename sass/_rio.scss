@@ -58,7 +58,9 @@
 
     // 链接
     a {
-        color: $rio-link-color;
+        @if $rio-link-color {
+            color: $rio-link-color;
+        }
 
         text-decoration: none;
 
@@ -73,10 +75,21 @@
             text-decoration: none;
         }
 
-        &:visited { color: $rio-link-visited-color; }
-        &:hover   { color: $rio-link-hover-color;   }
-        &:focus   { color: $rio-link-focus-color;   }
-        &:active  { color: $rio-link-active-color;  }
+        @if $rio-link-visited-color {
+            &:visited { color: $rio-link-visited-color; }
+        }
+
+        @if $rio-link-hover-color {
+            &:hover   { color: $rio-link-hover-color;   }
+        }
+
+        @if $rio-link-focus-color {
+            &:focus   { color: $rio-link-focus-color;   }
+        }
+
+        @if $rio-link-active-color {
+            &:active  { color: $rio-link-active-color;  }
+        }
     }
 
     // 加粗，着重
