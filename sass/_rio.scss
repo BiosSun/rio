@@ -307,4 +307,15 @@
         border: 0 none;
         border-bottom: $rio-hr-width $rio-hr-style $rio-hr-color;
     }
+
+    // 清除 li、th 及 td 元素下第一个子元素的上外边距，及最后一个子元素的下外边距
+    li, th, td {
+        > *:first-child {
+            margin-top: 0;
+        }
+
+        > *:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
