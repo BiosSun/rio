@@ -165,6 +165,9 @@
         border-radius: 0.3em;
 
         white-space: nowrap;
+
+        position: relative;
+        top: -1px;
     }
 
     // 图片
@@ -280,7 +283,7 @@
         > :first-child {
             margin-top: 0;
         }
-        
+
         > :last-child {
             margin-bottom: 0;
         }
@@ -298,6 +301,9 @@
             background: $rio-block-el-bg-color;
             white-space: pre;
             overflow: auto;
+
+            position: static;
+            top: auto;
 
             @if variable-exists(rio-code-block-line-height) {
                 line-height: $rio-code-block-line-height;
