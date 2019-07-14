@@ -31,8 +31,10 @@
     }
 
     // 防止子元素外边距溢出，影响样式效果。
-    > *:first-child { margin-top: 0;    }
-    > *:last-child  { margin-bottom: 0; }
+    &, p, li, th, td, dt, dd, blockquote {
+        > *:first-child { margin-top: 0;    }
+        > *:last-child  { margin-bottom: 0; }
+    }
 
     // 不需要加宽的元素
     address, caption, cite, code, em, th, dfn, var {
