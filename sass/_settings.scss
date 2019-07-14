@@ -7,7 +7,7 @@ $rio-class:                    rio                                              
 // 文字
 // ---------------------------
 
-// 字体大小
+// 文字大小
 $rio-font-size-base:           if(variable-exists("font-size-base"), $font-size-base, 14px)                             !default;
 
 // 文字行高
