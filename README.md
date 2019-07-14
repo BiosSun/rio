@@ -140,7 +140,7 @@ $rio-line-height: 1.75;
 ### $rio-title-weight
 
 标题文本的加粗组别；  
-默认值：`500`
+默认值：`600`
 
 ### $rio-title-line-height
 
