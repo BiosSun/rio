@@ -65,11 +65,13 @@
         }
 
         text-decoration: none;
+        text-decoration-skip-ink: auto;
+        text-underline-position: under;
+        text-decoration-thickness: 1px;
 
         &:hover {
-            text-decoration: underline;
-            text-decoration-skip-ink: auto;
-            text-decoration-position: under;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
         }
 
         &:focus {
@@ -138,7 +140,8 @@
     // 缩写
     abbr {
         cursor: help;
-        border-bottom: 1px dotted;
+        text-underline-position: under;
+        text-decoration-thickness: 1px;
     }
 
     // 引用
@@ -200,10 +203,11 @@
 
         a {
             color: inherit;
-            border-bottom: 1px dotted;
+
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
 
             &:hover, &:focus {
-                text-decoration: none;
                 color: $rio-link-color;
             }
         }

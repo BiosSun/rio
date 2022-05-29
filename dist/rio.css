@@ -31,12 +31,16 @@
 .rio a {
   color: #428bca;
   text-decoration: none;
-}
-.rio a:hover {
-  text-decoration: underline;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
-  text-decoration-position: under;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+}
+.rio a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
 }
 .rio a:focus {
   outline: 1px dotted #999;
@@ -81,7 +85,8 @@
 }
 .rio abbr {
   cursor: help;
-  border-bottom: 1px dotted;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
 }
 .rio q {
   color: #999;
@@ -107,10 +112,12 @@
 }
 .rio h1 a, .rio h2 a, .rio h3 a, .rio h4 a, .rio h5 a, .rio h6 a {
   color: inherit;
-  border-bottom: 1px dotted;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
 }
 .rio h1 a:hover, .rio h1 a:focus, .rio h2 a:hover, .rio h2 a:focus, .rio h3 a:hover, .rio h3 a:focus, .rio h4 a:hover, .rio h4 a:focus, .rio h5 a:hover, .rio h5 a:focus, .rio h6 a:hover, .rio h6 a:focus {
-  text-decoration: none;
   color: #428bca;
 }
 .rio h1 small, .rio h2 small, .rio h3 small, .rio h4 small, .rio h5 small, .rio h6 small {
