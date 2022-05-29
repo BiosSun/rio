@@ -18,26 +18,26 @@ $rio-line-height:              1.75                                             
 // ---------------------------
 
 // 文本颜色
-$rio-text-color:               if(variable-exists("text-color"), $text-color, #333)                                     !default;
+$rio-text-color:               if(variable-exists("text-color"), $text-color, #333)                                   !default;
 
 // 次要文本颜色
-$rio-text-color-quiet:         if(variable-exists("text-color-quiet"), $text-color-quiet, #999)                         !default;
+$rio-text-color-quiet:         if(variable-exists("text-color-quiet"), $text-color-quiet, #999)                       !default;
 
 // 强调文本颜色
-$rio-text-color-loud:          if(variable-exists("text-color-loud"), $text-color-loud, #222)                           !default;
+$rio-text-color-loud:          if(variable-exists("text-color-loud"), $text-color-loud, #222)                         !default;
 
 // 链接颜色
-$rio-link-color:               if(variable-exists("link-color"), $link-color, #428bca)                                  !default;
-$rio-link-hover-color:         if(variable-exists("link-hover-color"), $link-hover-color, #2a6496)                      !default;
+$rio-link-color:               if(variable-exists("link-color"), $link-color, #428bca)                                !default;
+$rio-link-hover-color:         if(variable-exists("link-hover-color"), $link-hover-color, #2a6496)                    !default;
 $rio-link-focus-color:         if(variable-exists("link-focus-color"), $link-focus-color, $rio-link-hover-color)        !default;
 $rio-link-active-color:        if(variable-exists("link-active-color"), $link-active-color, $rio-link-hover-color)      !default;
 $rio-link-visited-color:       if(variable-exists("link-visited-color"), $link-visited-color, $rio-link-color)          !default;
 
 // 块级元素边框颜色（若需要）
-$rio-block-el-border-color:    #f0f0f0                                                                                  !default;
+$rio-block-el-border-color:    #f0f0f0                                                                                !default;
 
 // 块级元素背景颜色（若需要）
-$rio-block-el-bg-color:        #fafafa                                                                                  !default;
+$rio-block-el-bg-color:        #fafafa                                                                                !default;
 
 // 块级元素
 // ---------------------------
@@ -81,7 +81,7 @@ $rio-list-margin-left:         2em                                              
 // ---------------------------
 
 // 背景色 -f
-$rio-mark-bg:                  #fffda0                                                                                  !default;
+$rio-mark-bg:                  #fffda0                                                                                !default;
 
 // 内边距 -f
 $rio-mark-padding:             1px 0                                                                                    !default;
@@ -90,7 +90,7 @@ $rio-mark-padding:             1px 0                                            
 // ---------------------------
 
 // 代码文字大小
-$rio-code-size:                0.9em                                                                                   !default;
+$rio-code-size:                0.9em                                                                                    !default;
 
 // 代码字体
 $rio-code-family:              Menlo, Monaco, Consolas, "Courier New", monospace                                        !default;
@@ -99,7 +99,7 @@ $rio-code-family:              Menlo, Monaco, Consolas, "Courier New", monospace
 // $rio-code-color:            #555                                                                                     !default;
 
 // 行内代码的背景颜色
-$rio-code-bg:                  #f7f7f7                                                                                  !default;
+$rio-code-bg:                  #f7f7f7                                                                                !default;
 
 // 代码块行高
 $rio-code-block-line-height:   1.48                                                                                     !default;
