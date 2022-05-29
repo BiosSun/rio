@@ -1,6 +1,6 @@
 gulp = require 'gulp'
-sass = require 'gulp-sass'
-minifyCss = require 'gulp-minify-css'
+sass = require('gulp-sass') require 'sass'
+cleanCss = require 'gulp-clean-css'
 rename = require 'gulp-rename'
 autoprefixer = require 'gulp-autoprefixer'
 
@@ -12,24 +12,19 @@ gulp.task 'sass', ->
 
     gulp.src './sass/build/rio.scss'
         .pipe sass options
-        .pipe autoprefixer {
-            browsers: [ 'last 7 versions', '> 1%', 'Android >= 4.0', 'iOS >= 6' ]
-        }
+        .pipe autoprefixer()
         .pipe gulp.dest './dist'
 
-        # Minify CSS
+        # Clean CSS
         # ---------------------------
-        .pipe minifyCss {
-            advanced: false,
-            aggressiveMerging: false,
+        .pipe cleanCss {
             compatibility: 'ie7',
-            keepSpecialComments: 1
         }
         .pipe rename { suffix: '.min' }
         .pipe gulp.dest './dist'
 
-gulp.task 'copy', ['sass'], ->
+gulp.task 'copy', ->
     gulp.src './dist/*', { base: './dist/' }
         .pipe gulp.dest './doc/css/'
 
-gulp.task 'default', ['sass', 'copy']
+gulp.task 'default', gulp.series('sass', 'copy')

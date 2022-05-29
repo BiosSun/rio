@@ -1,36 +1,36 @@
 {
-  "name": "rio-typesetting",
-  "title": "Rio",
-  "description": "一个简洁的文字排版样式库。",
-  "version": "0.4.1",
-  "homepage": "http://biossun.github.io/rio",
-  "author": {
-    "name": "Bios Sun",
-    "email": "biossun@gmail.com",
-    "url": "http://biossun.org"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:BiosSun/rio.git"
-  },
-  "bugs": "https://github.com/BiosSun/rio/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/BiosSun/rio/blob/master/LICENSE-MIT"
+    "name": "rio-typesetting",
+    "title": "Rio",
+    "description": "一个简洁的文字排版样式库。",
+    "version": "0.4.1",
+    "homepage": "http://biossun.github.io/rio",
+    "author": {
+        "name": "Bios Sun",
+        "email": "biossun@gmail.com",
+        "url": "http://biossun.org"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:BiosSun/rio.git"
+    },
+    "bugs": "https://github.com/BiosSun/rio/issues",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/BiosSun/rio/blob/master/LICENSE-MIT"
+        }
+    ],
+    "scripts": {
+        "prepublishOnly": "gulp && gh-pages -d doc"
+    },
+    "devDependencies": {
+        "coffeescript": "^2.7.0",
+        "gh-pages": "^4.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.52.1"
     }
-  ],
-  "scripts": {
-    "prepublishOnly": "gulp && gh-pages -d doc"
-  },
-  "devDependencies": {
-    "coffee-script": "^1.10.0",
-    "gh-pages": "^1.2.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-minify-css": "^1.2.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
-    "gulp-sourcemaps": "^1.6.0"
-  }
 }
